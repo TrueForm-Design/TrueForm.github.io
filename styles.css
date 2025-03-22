@@ -1,9 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9; /* Updated background for a minimalist feel */
+    line-height: 1.6;
+    color: #333;
+    padding: 0 20px;
 }
 
-h1 {
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text for readability */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff; /* White background for content sections */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
     color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd; /* Underline for section titles */
+    padding-bottom: 10px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Links */
+a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p, section ul {
+        font-size: 0.9rem;
+    }
 }
